@@ -1,6 +1,7 @@
+
 import React from 'react';
 import { ArrowRight, ChevronRight, BarChart3, Users2, Database, Zap, HelpCircle, CheckCircle2 } from 'lucide-react';
-import { SERVICES, PROBLEMS, APPROACH_STEPS, STATS, CASE_STUDIES } from '../constants.tsx';
+import { SERVICES, PROBLEMS, APPROACH_STEPS, STATS, CASE_STUDIES } from '../constants';
 
 interface HomeProps {
   onNavigate: (path: string) => void;
@@ -38,7 +39,7 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
                 onClick={() => onNavigate('/contact')}
                 className="px-14 py-6 bg-brand-gold text-brand-deepBlue font-bold text-xl hover:bg-white transition-all shadow-2xl flex items-center justify-center gap-3 active:scale-95"
               >
-                Get the Expertise <ArrowRight size={24} />
+                Talk to an Expert <ArrowRight size={24} />
               </button>
             </div>
           </div>

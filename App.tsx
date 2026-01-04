@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import Layout from './components/Layout.tsx';
-import Home from './components/Home.tsx';
-import Services from './components/Services.tsx';
-import Platform from './components/Platform.tsx';
-import Contact from './components/Contact.tsx';
-import Careers from './components/Careers.tsx';
-import { CASE_STUDIES } from './constants.tsx';
+import Layout from './components/Layout';
+import Home from './components/Home';
+import Services from './components/Services';
+import Platform from './components/Platform';
+import Contact from './components/Contact';
+import Careers from './components/Careers';
+import { CASE_STUDIES } from './constants';
 import { ArrowRight } from 'lucide-react';
 
 const App: React.FC = () => {
   const [activePage, setActivePage] = useState('/');
 
+  // Simple hash-based router simulation
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.replace('#', '') || '/';
@@ -19,7 +20,7 @@ const App: React.FC = () => {
     };
 
     window.addEventListener('hashchange', handleHashChange);
-    handleHashChange();
+    handleHashChange(); // Initial load
 
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
@@ -110,6 +111,7 @@ const App: React.FC = () => {
                             </div>
                           ))}
                         </div>
+                        {/* Technical Brief button removed as requested */}
                      </div>
                    </div>
                  ))}
