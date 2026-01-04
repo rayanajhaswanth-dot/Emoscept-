@@ -39,7 +39,7 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
                 onClick={() => onNavigate('/contact')}
                 className="px-14 py-6 bg-brand-gold text-brand-deepBlue font-bold text-xl hover:bg-white transition-all shadow-2xl flex items-center justify-center gap-3 active:scale-95"
               >
-                Talk to an Expert <ArrowRight size={24} />
+                Get the Expertise <ArrowRight size={24} />
               </button>
             </div>
           </div>
