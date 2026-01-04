@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Globe, Mail, Linkedin, Twitter } from 'lucide-react';
-import { NAV_LINKS } from '../constants';
+import { NAV_LINKS } from '../constants.tsx';
 
 interface LayoutProps {
   children: React.ReactNode;
