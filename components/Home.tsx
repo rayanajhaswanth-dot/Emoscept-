@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { ArrowRight, ChevronRight, BarChart3, Users2, Database, Zap, HelpCircle, CheckCircle2 } from 'lucide-react';
-import { SERVICES, PROBLEMS, APPROACH_STEPS, STATS, CASE_STUDIES } from '../constants';
+import { SERVICES, PROBLEMS, APPROACH_STEPS, STATS, CASE_STUDIES } from '../constants.tsx';
 
 interface HomeProps {
   onNavigate: (path: string) => void;

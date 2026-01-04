@@ -20,7 +20,7 @@ import {
   Lightbulb,
   UserPlus
 } from 'lucide-react';
-import { NavLink, ServiceTile, CaseStudy } from './types';
+import { NavLink, ServiceTile, CaseStudy } from './types.ts';
 
 export interface NavLinkWithIcon extends NavLink {
   icon: React.ReactNode;
